@@ -11,7 +11,7 @@ describe('My first test automation framework', () => {
         await mainPage.bodyOfThePage.waitForDisplayed();
     });
 
-    it('Wait it to be loaded', async () => {
+    it('Validate required element', async () => {
         await expect(await elements.firstElementInExpandedDropdown).toBeExisting();
         await expect(await elements.firstElementInExpandedDropdown).toBeClickable();
     });
